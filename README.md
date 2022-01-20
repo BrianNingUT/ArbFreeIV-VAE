@@ -19,8 +19,10 @@ Python files:
 - DensityEstimation.py:                Functions pertaining to computation of the spline implied density of the CTMC-SDE model.
 - Fit_CTMC.py:                         Functions pertaining to fitting the CTMC-SDE model.
 - VAE_fit.py:                          Functions pertaining to generation and fitting of the CTMC_VAE model.
-- helpers.py:                          General helper functions
+- helpers.py:                          General helper functions.
 
 Data/Networks:
 - all_cur_train_valid_days_new.pickle  Contains the selected training and testing days.
-- ###_fitted_params.pickle 
+- ###_fitted_params.pickle             Parameters of the fitted CTMC-SDE model.
+- kf_days.pickle                       Some general precomputed statistics used for warm start in some optimizations.
+- Networks/                            Contains several pretrained networks of the CTMC-VAE model.
