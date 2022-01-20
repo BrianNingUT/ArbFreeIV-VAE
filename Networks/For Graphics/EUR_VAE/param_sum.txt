@@ -1,0 +1,1 @@
+{"batch_size": 200, "latent_size": 3, "hidden_dim": [512, 256, 128, 64], "beta": 10.0}
