@@ -4,7 +4,7 @@ Code repository for demos of the article 'Arbitrage-Free Implied Volatility Surf
 This repository contains files used to generate some of the figures found in the paper, a short demo on how to fit the CTMC-SDE (CTMC) model, and how to fit the CTMC_VAE using some precomputed outputs. 
 
 **IMPORTANT NOTES**
-- Due to data constraints, only a single day's implied volatility surface data has been provided however the demo can be run on other data if provided. 
+- We provide a single day's sample Implied Volatilities to demonstrate the validity of our modeling approach.
 - For simplicity all code has been ported into Python, however this significantly increases the run time of some notebooks, in particular CTMC_Model_Fitting.ipynb. 
 
 **Description of files**
