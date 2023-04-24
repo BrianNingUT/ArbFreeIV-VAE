@@ -6,13 +6,15 @@ This repository contains files used to generate some of the figures found in the
 **IMPORTANT NOTES**
 - We provide a single day's sample Implied Volatilities to demonstrate the validity of our modeling approach.
 - For simplicity all code has been ported into Python, however this significantly increases the run time of some notebooks, in particular CTMC_Model_Fitting.ipynb. 
+- Code used to generated one-day-ahead surfaces are provided for transparency but require data files not available in this repo due to usage of non-publically available data. 
 
 **Description of files**
 Notebooks: Detailed descriptions are provide inside of each.
 - *CTMC_Model_Fitting.ipynb*:            Fitting of the CTMC model on a single day's IV data
 - *CTMC_VAE_Fit.ipynb*:                  Fitting of the CTMC-VAE model on precomputed CTMC model parameters.
-- *Pairwise_param_scatter.ipynb*:        Scatter plots of generated parameters of the CTMC-VAE model (Figure 5 in article)
-- *Random_Surfaces.ipynb*:               Several randomly generated surfaces for different currency pairs (Figure 7 in article)
+- *Pairwise_param_scatter.ipynb*:        Scatter plots of generated parameters of the CTMC-VAE model (Figure 4 in article)
+- *Random_Surfaces.ipynb*:               Several randomly generated surfaces for different currency pairs (Figure 6 in article)
+- *Delta_Histogram.ipynb*:               Histogram of generated one-day-ahead surfaces using the delta-day method detailed in Section 5.8 (Figure 7 in article)
 
 Python files:
 - *ctmc.py*:                             Functions pertaining to computation of the price and densities of the CTMC-SDE model.
@@ -26,3 +28,4 @@ Data/Networks:
 - *###_fitted_params.pickle*             Parameters of the fitted CTMC-SDE model.
 - *kf_days.pickle*                       Some general precomputed statistics used for warm start in some optimizations.
 - *Networks/*                            Contains several pretrained networks of the CTMC-VAE model.
+- *delta_results.pickle*                 Contains generated surface parameters and corresponding baseline shifts
